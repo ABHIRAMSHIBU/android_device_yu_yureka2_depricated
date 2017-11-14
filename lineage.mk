@@ -14,16 +14,16 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/xiaomi/mido/full_mido.mk)
+$(call inherit-product, device/yu/yureka2/full_yureka2.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mido
-BOARD_VENDOR := Xiaomi
+PRODUCT_NAME := lineage_yureka2
+BOARD_VENDOR := YU
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-yu
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V8.5.4.0.NCFMIED:user/release-keys" \
-    PRIVATE_BUILD_DESC="mido-user 7.0 NRD90M V8.5.4.0.NCFMIED release-keys"
+	BUILD_FINGERPRINT="YU/YUREKA2/YUREKA2:6.0.1/MMB29M/07231731:user/release-keys" \
+	PRIVATE_BUILD_DESC="yureka2-user 6.0.1 MMB29M 07231731 release-keys"
